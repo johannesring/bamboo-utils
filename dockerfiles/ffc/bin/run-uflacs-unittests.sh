@@ -7,4 +7,4 @@ sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
 cd ${HOME}/build/src/ffc
-${PYTHON} -B -m pytest -svl --junitxml ${WORKDIR}/report.xml test/uflacs/unit
+${PYTHON} -B -m pytest -svl --junitxml ${BAMBOO_WORKDIR}/report.xml test/uflacs/unit
