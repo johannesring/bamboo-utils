@@ -9,5 +9,5 @@
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/dolfin/build
-mpirun -n 3 bash -c '${PYTHON} -B -m pytest -svl --junitxml ${BAMBOO_WORKDIR}/report-${PMI_RANK}.xml test/unit/python'
+cd ${HOME}/build/src/dolfin/build/test/unit/python
+mpirun -n 3 bash -c '${PYTHON} -B -m pytest -svl --junitxml ${BAMBOO_WORKDIR}/report-${PMI_RANK}.xml .'
