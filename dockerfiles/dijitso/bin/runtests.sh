@@ -1,6 +1,6 @@
 #!/bin/bash
 
-: ${BAMBOO_WORKDIR=/data}
+export BAMBOO_WORKDIR=${BAMBOO_WORKDIR:-"/data"}
 
 # Make sure BAMBOO_WORKDIR is writable
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
