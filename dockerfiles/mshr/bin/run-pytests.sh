@@ -12,5 +12,5 @@ sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
 cd ${HOME}/build/src/mshr/build
-ctest -j${PROCS} -T Test -E Python
+ctest -j${PROCS} -T Test -R Python
 cp -r Testing ${BAMBOO_WORKDIR}
