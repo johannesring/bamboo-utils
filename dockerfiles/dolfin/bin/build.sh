@@ -11,6 +11,6 @@ for p in $packages; do
 done
 
 # Build C++ unit tests and demos
-cd ${HOME}/build0554/src/dolfin/build
+cd ${FENICS_HOME}/src/dolfin/build
 make -j${PROCS} tests
 make -j${PROCS} demo
