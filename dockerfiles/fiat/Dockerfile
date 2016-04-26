@@ -1,10 +1,10 @@
 FROM bamboo-base
 
 # Add repositories
-COPY fiat ${HOME}/build/src/fiat
+COPY fiat ${FENICS_HOME}/build/src/fiat
 
 # Copy scripts
-COPY bin ${HOME}/bin
+COPY bin ${FENICS_HOME}/bin
 
 # Set permissions
-RUN sudo chown -R fenics:fenics ${HOME}
+RUN sudo chown -R fenics:fenics ${FENICS_HOME}

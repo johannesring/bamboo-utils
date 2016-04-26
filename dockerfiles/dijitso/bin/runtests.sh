@@ -6,7 +6,7 @@ export BAMBOO_WORKDIR=${BAMBOO_WORKDIR:-"/data"}
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/dijitso/test && \
+cd ${FENICS_HOME}/src/dijitso/test && \
     ./runtests.sh && \
     cp -r htmlcov ${BAMBOO_WORKDIR}/ && \
     cp report*.xml ${BAMBOO_WORKDIR}/

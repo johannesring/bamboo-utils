@@ -9,5 +9,5 @@ export FFC_USE_CTYPES=${FFC_USE_CTYPES:-1}
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/dolfin/build/test/unit/python
+cd ${FENICS_HOME}/src/dolfin/build/test/unit/python
 mpirun -n 3 bash -c '${PYTHON} -B -m pytest -svl --junitxml ${BAMBOO_WORKDIR}/report-${PMI_RANK}.xml .'

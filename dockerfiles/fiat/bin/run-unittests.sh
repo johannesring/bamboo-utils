@@ -6,5 +6,5 @@ export BAMBOO_WORKDIR=${BAMBOO_WORKDIR:-"/data"}
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/fiat/test/unit
+cd ${FENICS_HOME}/src/fiat/test/unit
 ${PYTHON} -B -m nose --verbose --with-xunit --xunit-file=${BAMBOO_WORKDIR}/report.xml

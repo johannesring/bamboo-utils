@@ -11,5 +11,5 @@ export FFC_USE_CTYPES=${FFC_USE_CTYPES:-1}
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/ffc/test/unit
+cd ${FENICS_HOME}/src/ffc/test/unit
 ${PYTHON} test.py

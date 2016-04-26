@@ -2,5 +2,5 @@
 
 set -e
 
-cd ${HOME}/build/src/dolfin/build
+cd ${FENICS_HOME}/src/dolfin/build
 make run_doctest

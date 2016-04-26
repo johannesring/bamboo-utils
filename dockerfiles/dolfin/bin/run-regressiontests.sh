@@ -10,7 +10,7 @@ export DOLFIN_NOPLOT=${DOLFIN_NOPLOT:-1}
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/dolfin/build
+cd ${FENICS_HOME}/src/dolfin/build
 make run_regressiontests
 if [ "$?" -ne "0" ]; then
     cp test/regression/demo.log ${BAMBOO_WORKDIR}

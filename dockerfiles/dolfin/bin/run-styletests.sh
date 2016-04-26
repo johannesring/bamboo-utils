@@ -9,5 +9,5 @@ export FFC_USE_CTYPES=${FFC_USE_CTYPES:-1}
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/dolfin/build/test/codingstyle
+cd ${FENICS_HOME}/src/dolfin/build/test/codingstyle
 ${PYTHON} -B -m pytest -svl --junitxml ${BAMBOO_WORKDIR}/report.xml .

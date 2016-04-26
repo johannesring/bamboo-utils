@@ -6,7 +6,7 @@ for p in $packages; do
 done
 
 # Build google test for testing uflacs
-cd ${HOME}/build/src/ffc/libs/gtest-1.7.0 && \
+cd ${FENICS_HOME}/src/ffc/libs/gtest-1.7.0 && \
     mkdir -p lib && \
     cd lib && \
     cmake .. && \

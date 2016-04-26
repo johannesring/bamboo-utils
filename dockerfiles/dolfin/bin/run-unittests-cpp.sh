@@ -6,5 +6,5 @@ export BAMBOO_WORKDIR=${BAMBOO_WORKDIR:-"/data"}
 sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
 # Run tests and copy results to BAMBOO_WORKDIR
-cd ${HOME}/build/src/dolfin/build
+cd ${FENICS_HOME}/src/dolfin/build
 ./test/unit/cpp/unittests_cpp --gtest_output=xml:${BAMBOO_WORKDIR}/report.xml
