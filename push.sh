@@ -14,7 +14,6 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 docker login \
        --username ${bamboo_DOCKER_REGISTRY_USERNAME} \
-       --email ${bamboo_DOCKER_REGISTRY_EMAIL} \
        --password ${bamboo_DOCKER_REGISTRY_PASSWORD} \
        ${bamboo_DOCKER_REGISTRY_SERVER}
 
