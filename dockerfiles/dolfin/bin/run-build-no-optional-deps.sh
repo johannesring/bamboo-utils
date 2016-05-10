@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 export FENICS_BUILD_TYPE=${FENICS_BUILD_TYPE:-"Developer"}
 export VERBOSE=${VERBOSE:-1}
 export PROCS=${PROCS:-1}

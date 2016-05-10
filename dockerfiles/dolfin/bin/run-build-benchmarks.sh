@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 export VERBOSE=${VERBOSE:-1}
 export PROCS=${PROCS:-1}
 
