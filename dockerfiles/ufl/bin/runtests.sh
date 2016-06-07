@@ -1,10 +1,10 @@
 #!/bin/bash
 
-export BAMBOO_WORKDIR=${WORKDIR:-"/data"}
+export BAMBOO_WORKDIR=${BAMBOO_WORKDIR:-"/data"}
 
-# Make sure WORKDIR is writable
-sudo chmod -R a+w ${WORKDIR}
+# Make sure BAMBOO_WORKDIR is writable
+sudo chmod -R a+w ${BAMBOO_WORKDIR}
 
-# Run tests and copy results to WORKDIR
+# Run tests and copy results to BAMBOO_WORKDIR
 cd ${FENICS_HOME}/src/ufl/test
-${PYTHON} -B -m pytest -svl --junitxml ${WORKDIR}/report.xml .
+${PYTHON} -B -m pytest -svl --junitxml ${BAMBOO_WORKDIR}/report.xml .
